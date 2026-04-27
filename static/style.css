@@ -1,0 +1,77 @@
+/* 整体背景 */
+body {
+    font-family: Arial;
+    background: #FFF0F0; /* 奶油粉 */
+    margin: 0;
+}
+
+/* 顶部 */
+h1 {
+    background: #FFC2D1;
+    color: #5a3a3a;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 卡片 */
+.container {
+    width: 400px;
+    margin: 30px auto;
+    background: #FFE5EC;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* 输入框 */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #FFD6E4;
+    background: #fff;
+}
+
+/* 按钮 */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #FFC2D1;
+    color: #5a3a3a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* hover */
+button:hover {
+    background: #FF9EB5;
+}
+
+/* 记录 */
+.record {
+    background: #FFF0F5;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+
+/* 删除 */
+.delete {
+    color: #E89EB8;
+    float: right;
+}
+
+/* summary */
+.summary {
+    background: #FFD6E4;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 12px;
+}
+
+/* 链接 */
+a {
+    color: #E89EB8;
+}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Add Expense</h2>
+
+<form action="/add" method="post">
+    <select name="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+
+    <input name="category" placeholder="Category">
+    <input name="amount" placeholder="Amount">
+
+    <button>Add</button>
+</form>
+
+<hr>
+
+{% for row in rows %}
+<div class="record">
+    {{row[2]}} - {{row[3]}} - ${{row[4]}}
+    <a class="delete" href=" ">Delete</a >
+</div>
+{% endfor %}
+
+<div class="summary">
+    <p>Income: {{income}}</p >
+    <p>Expense: {{expense}}</p >
+    <p>Balance: {{balance}}</p >
+</div>
+
+<a href="/logout">Logout</a >
+
+{% endblock %}
